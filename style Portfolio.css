@@ -1,0 +1,157 @@
+body{
+  margin:0;
+  font-family:Poppins;
+  background:linear-gradient(135deg,#dff6ff,#ffffff);
+  transition:0.4s
+}
+
+.dark{
+  background:#1f3a7a;
+  color:#fff
+}
+
+/* Navbar */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  padding:20px;
+  background:#00b4d8;   /* sky blue */
+  backdrop-filter:blur(10px)
+}
+
+.navbar ul{
+  display:flex;
+  gap:20px;
+  list-style:none
+}
+
+.navbar a{
+  text-decoration:none;
+  color:#fff
+}
+
+.navbar a:hover{
+  color:#caf0f8;   /* light hover */
+}
+
+/* Header */
+header{
+  text-align:center;
+  padding:60px
+}
+
+/* Button */
+.btn{
+  padding:10px 20px;
+  border:none;
+  background:#00b4d8;   /* sky blue */
+  color:#fff;
+  border-radius:10px;
+  cursor:pointer
+}
+
+.btn:hover{
+  background:#48cae4;
+}
+
+/* Cards */
+.card{
+  margin:20px;
+  padding:30px;
+  border-radius:20px;
+  background:rgba(255,255,255,0.3);
+  backdrop-filter:blur(10px)
+}
+
+/* Projects */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  gap:15px
+}
+
+.project{
+  padding:20px;
+  background:#00b4d8;   /* sky blue */
+  border-radius:10px;
+  transition:0.3s;
+  color:white;
+}
+
+.project:hover{
+  transform:scale(1.05);
+  background:#48cae4;
+}
+
+/* Skills bars */
+.bar{
+  height:8px;
+  background:#ddd;
+  border-radius:10px;
+  margin:5px 0
+}
+
+.bar div{
+  height:100%;
+  background:#00b4d8;   /* sky blue */
+  border-radius:10px
+}
+
+/* Toggle */
+.toggle{
+  cursor:pointer;
+  font-size:22px
+}
+
+/* Animation */
+.fade{
+  opacity:0;
+  transform:translateY(30px);
+  transition:1s
+}
+
+.show{
+  opacity:1;
+  transform:translateY(0)
+}
+
+/* Contact */
+.contact{
+  padding:40px;
+  text-align:center
+}
+
+form{
+  max-width:400px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px
+}
+
+input, textarea{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc
+}
+
+button{
+  padding:10px;
+  border:none;
+  background:#00b4d8;   /* sky blue */
+  color:white;
+  border-radius:8px;
+  cursor:pointer
+}
+
+button:hover{
+  background:#48cae4;
+}
+
+/* Footer */
+footer{
+  text-align:center;
+  padding:20px;
+  background-color:#00b4d8;   /* sky blue */
+  color:white;
+}
