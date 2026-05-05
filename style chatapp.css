@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #ffe6eb; /* very light pink */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* ================= BUBBLES ================= */
+.bubbles {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bubbles span {
+    position: absolute;
+    bottom: -150px;
+    width: 80px;
+    height: 80px;
+    background: rgba(255, 182, 193, 0.3); /* light pink */
+    border-radius: 50%;
+    animation: rise 15s infinite ease-in;
+}
+
+/* Different sizes & positions */
+.bubbles span:nth-child(1) { left: 10%; width: 60px; height: 60px; }
+.bubbles span:nth-child(2) { left: 30%; width: 90px; height: 90px; }
+.bubbles span:nth-child(3) { left: 50%; width: 70px; height: 70px; }
+.bubbles span:nth-child(4) { left: 70%; width: 100px; height: 100px; }
+.bubbles span:nth-child(5) { left: 85%; width: 65px; height: 65px; }
+
+/* Animation */
+@keyframes rise {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0.4;
+    }
+    100% {
+        transform: translateY(-110vh) scale(1.2);
+        opacity: 0;
+    }
+}
+
+/* ================= CHAT BOX ================= */
+.chat-container {
+    position: relative;
+    z-index: 1;
+    width: 360px;
+    border-radius: 20px;
+    border: 3px solid #d63384; /* dark pink border */
+    background: #fff0f5; /* light pink inside */
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+
+/* Header */
+h2 {
+    margin: 0;
+    padding: 12px;
+    background: #d63384; /* dark pink */
+    color: white;
+    text-align: center;
+}
+
+/* Messages area */
+#messages {
+    list-style: none;
+    padding: 10px;
+    height: 250px;
+    overflow-y: auto;
+    background: #ffeef2;
+}
+
+#messages li {
+    background: #ffccd5;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+/* ================= INPUT ================= */
+.input-box {
+    display: flex;
+    padding: 10px;
+    background: #fff0f5;
+}
+
+input {
+    flex: 1;
+    padding: 10px;
+    border-radius: 12px;
+    border: 2px solid #ffb3c1;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Button */
+button {
+    padding: 10px 15px;
+    margin-left: 8px;
+    border-radius: 12px;
+    border: none;
+    background: #339af0; /* blue */
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #1c7ed6;
+}
