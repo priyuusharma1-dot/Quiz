@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f7fa;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0a1f44;
+  color: white;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  cursor: pointer;
+}
+
+/* Heading */
+.main-heading {
+  text-align: center;
+  margin-top: 20px;
+  color: black;
+}
+
+/* Cards */
+.container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  width: 240px;
+  border-radius: 12px;
+  text-align: center;
+  border: 2px solid #0a1f44;
+  transition: 0.3s;
+}
+
+.card img {
+  width: 60px;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+.card button {
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background: #0a1f44;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background: #06122b;
+}
+
+/* Video Page */
+.course-title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-box {
+  width: 60%;
+  margin: 30px auto;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+}
